@@ -1,14 +1,22 @@
 {
-  "name": "my-bank-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+	"name": "my-bank-api",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.1",
+		"winston": "^3.2.1"
+	},
+	"nodemonConfig": {
+		"ignore": [
+			"*.log",
+			"*.json"
+		]
+	},
+	"type": "module"
 }
